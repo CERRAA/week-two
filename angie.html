@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+   <div class="before">
+    <h1>
+        <div class="akan">AKAN</div> <div class="names">NAME</div> <div class="origin">ORIGIN</div>
+    </h1>
+   <div class="paragraph">
+    <p>
+      Akan names are names given to children from Ghana....They are given during the day of birth,,,which are passed from one generatiom to the other.
+    </p>
+   </div>
+   <div class="fill">
+    <p>
+        Fill the form to get your Akan name:
+    </p>
+   </div>
+    <form action="" id="form" > 
+        <div class="place">
+            <div class="day">
+                <label for="day">Day of Birth:</label><br>
+                <input type="number" id="day" placeholder = "DAY" required><br>
+                
+            </div>
+            <label for="month">Month of Birth:</label><br>
+            <input type="number" id="month" placeholder = "MONTH" required><br>
+            <label for="year">Year of Birth:</label><br>
+            <input type="number" id="year" placeholder = "YEAR" required><br><br><br>
+            <input type="date" placeholder="Disabled input"> <br><br>
+        
+        <label>GENDER</label>
+            <input type="radio" name="gender" id="gender1" value="male"> Male
+            <input type="radio" name="gender" id="gender2" value="female"> Female<br><br>
+            <input type="submit" value="Submit" class="btn btn-primary btn-lg" onclick="output()">
+        </form>
+   </div>
+</body>
+</html>

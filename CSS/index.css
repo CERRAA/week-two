@@ -1,0 +1,24 @@
+.akan{
+    color: green;
+}
+.names {
+    color: red;
+}
+.origin{
+    color: yellow;
+}
+h1{
+    text-align: center;
+}
+#form{
+text-align: center;
+border: solid red 12px;
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpGMHzV1J0ANbd2ysr_8VXLJdIbKhAHqAUA&usqp=CAU);
+}
+.fill {
+    text-align: center;
+}
+.before{
+    background-color: black;
+    color: white;
+}
