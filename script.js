@@ -1,7 +1,10 @@
-// const submitbutton = document.getElementById('get-name');
+// const submitbutton = document.getElementById('button');
 // const date = document.getElementById('date')
-// const male = document.getElementById('varMale').value
-// const female = document.getElementById("varFemale").value
+// const male = document.getElementById('gender1').value;
+// const female = document.getElementById('gender2').value;
+// const day = document.getElementById("day").value;
+// const month = document.getElementById('month').value-1;
+// const year = document.getElementById('year').value;
 
 // var days=['sunday','monday','tuesday','wednsday','thursday','friday','saturday','sunday'];
 // var male=['kwasi','kwadwo','kwabena','kwaku','Yaw','kofi','kwame'];
@@ -11,15 +14,14 @@
 
 
 // submitbutton.addEventListener('click', function (e) {
-
-//     const finalDate = new Date(date.value)
 //     e.preventDefault()
+//     const fullDate = `${day.value}-${month.value}- ${year.value}`
+//     const finalDate = new Date(fullDate);
+   
 
 //     console.log(finalDate.getDay());
-//     console.log(male);
-//     console.log(female);
+//     console.log(male[finalDate]);
+//     console.log(female[finalDate]);
+
 
 // })
-
-
-function 
