@@ -1,27 +1,34 @@
-// const submitbutton = document.getElementById('button');
-// const date = document.getElementById('date')
-// const male = document.getElementById('gender1').value;
-// const female = document.getElementById('gender2').value;
-// const day = document.getElementById("day").value;
-// const month = document.getElementById('month').value-1;
-// const year = document.getElementById('year').value;
+const day = document.getElementById('day')
+const month = document.getElementById('month');
+const year = document.getElementById('year');
+const genderMale = document.getElementById("rad1")
+const output = document.getElementById("output");
 
-// var days=['sunday','monday','tuesday','wednsday','thursday','friday','saturday','sunday'];
-// var male=['kwasi','kwadwo','kwabena','kwaku','Yaw','kofi','kwame'];
-// var female=['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
-
+const btnSubmit = document.getElementById('submit')
+const days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+const male = ["kwasi", "kwadwo", "kwabena", "kwaku", "yaw", "kofi", "kwame"];
+const female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 
-
-// submitbutton.addEventListener('click', function (e) {
-//     e.preventDefault()
-//     const fullDate = `${day.value}-${month.value}- ${year.value}`
-//     const finalDate = new Date(fullDate);
-   
-
-//     console.log(finalDate.getDay());
-//     console.log(male[finalDate]);
-//     console.log(female[finalDate]);
+btnSubmit.addEventListener('click', function(e){
+    e.preventDefault()
 
 
-// })
+    //get the date string
+    const date = `${month.value}-${day.value}-${year.value}`
+
+    //change the date string to an actual date object
+    const finalDate = new Date(date)
+    const actualDay = finalDate.getDay()
+
+    if(genderMale.checked == true){
+  akanName = male[actualDay]
+    }else {
+  akanName = female[actualDay]
+        
+    }
+
+   output.innerText = `Your akan name is ${akanName}`
+
+})
+
